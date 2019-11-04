@@ -88,7 +88,7 @@ bundler (2.0.2, default: 1.17.2)
 
 Explore the `--help` message of the above commands to find out the various options available.
 
-## Creating a site locally
+## Creating a site locally with Jekyll
 
 Once all the required tools are installed, we can set up a Jekyll site with just couple of commands.
 
@@ -284,7 +284,7 @@ We covered the following topics in this post:
 
 The steps covered here is just one among the many ways to set up Github Pages. There are ways to set up a Github Page completly online without any local operations. I will cover that in a later post.
 
-This blog is an extension of my learning journey. When learning something new, I often take notes so that I can revisit later in case I need to refer. I post them here, so others can also benefit from my experience.
+This blog is an extension of my learning journey. When learning something new, I often take notes so that I can revisit later in case I need to refer. I share them here, so others can also benefit from my experience.
 
 ## Tip time
 
@@ -358,11 +358,3 @@ index.html
 - [Jekyll directory structure](https://jekyllrb.com/docs/structure/)
 - [Learn YAML](https://learnxinyminutes.com/docs/yaml/)
 - [ls man page](http://man7.org/linux/man-pages/man1/ls.1.html)
-
-## todo
-
-- [x] finish my first post
-- [ ] update About page
-- [ ] update categories, posts
-- [ ] update bio
-- [ ] pick a title
