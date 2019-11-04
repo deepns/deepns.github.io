@@ -284,11 +284,11 @@ We covered the following topics in this post:
 
 The steps covered here is just one among the many ways to set up Github Pages. There are ways to set up a Github Page completly online without any local operations. I will cover that in a later post.
 
-This blog is an extension of my learning journey. When learning something new, I often take notes so that I can revisit later in case I need to refer. I share them here, so others can also benefit from my experience.
+This blog is an extension of my learning journey. When learning something new, I often take notes so that I can revisit later in case I need to refer. I share them here, it will be helpful to others as well in some form.
 
 ## Tip time
 
-I have been learning about Linux internals in my spare time off late. I'm more of a keyboard person than mouse in my regular work. So I focused on exploring the various CLI commands, their options, and general scripting in Linux. That helped to be more productive than ever before. I'll be sprinkling my posts with at least one tip related to Linux conmand line tools.
+I have been learning about Linux internals in my spare time off late. I'm more of a keyboard person than mouse in my regular work. So I focused on exploring the various CLI commands, their options, and general scripting in Linux. That helped to improve my productivity every day. I'll be sprinkling my posts with at least one tip related to Linux conmand line tools.
 
 `ls` command lists one entry per line by default if the output is not a terminal.
 
