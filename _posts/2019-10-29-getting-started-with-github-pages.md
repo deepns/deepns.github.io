@@ -161,7 +161,7 @@ Configuration file: /Users/deepan/sandbox/awesome_blog/_config.yml
 
 Output `bundle exec jekyll serve` command lists the port on which the web server is running. The default port is `4000`. Go to `http://127.0.0.1:4000/` on your favorite browser.
 We will see a page like this.
-![new-jekyll-blog-default](../assets/images/new-jekyll-blog.png)
+![new-jekyll-blog-default](../../assets/images/new-jekyll-blog.png)
 
 This is the default home page of template site created by Jekyll.
 
