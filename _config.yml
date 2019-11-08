@@ -107,3 +107,11 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+analytics:
+provider: "google-gtag"
+google:
+  tracking_id: "UA-151868570-1"
+  anonymize_ip: false # default
+
+repository: deepns/deepns.github.io
