@@ -1,7 +1,7 @@
 ---
-title: VSCode app missing from macOS dock
+title: VSCode app missing from macOS Dock
 categories:
-    - tech
+    - Tech
 tags:
     - macOS
     - VSCode
