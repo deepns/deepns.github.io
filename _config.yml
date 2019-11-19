@@ -109,9 +109,9 @@ tag_archive:
   path: /tags/
 
 analytics:
-provider: "google-universal"
-google:
-  tracking_id: "UA-151868570-1"
-  anonymize_ip: false # default
+  provider: "google-tag"
+  google:
+    tracking_id: "UA-151868570-1"
+    anonymize_ip: false # default
 
 repository: deepns/deepns.github.io
