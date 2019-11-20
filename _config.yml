@@ -109,7 +109,7 @@ tag_archive:
   path: /tags/
 
 analytics:
-  provider: "google-gtag"
+  provider: "google-universal"
   google:
     tracking_id: "UA-151868570-1"
     anonymize_ip: false # default
