@@ -12,7 +12,7 @@ I ran into weird problem with VSCode on my Mac recently. The app would show up i
 `Dock` is one of the several core services in the macOS (checkout `/System/Library/CoreServices/`). Killing the process will restart the service again. `Dock` can be killed in mulitple ways:
 
 - Open `Activity Monitor`, search for the Dock process and stop it. Choose `Force Quit` when stopping the process.
-- Open `Terminal` app and run `killall Dock`. Note that process name here is case sensitive. 
+- Open `Terminal` app and run `killall Dock`. Note that process name here is case sensitive.
   - Alternatively, you can also find the process ID and send a kill signal. To find the pid of Dock, use `pgrep Dock`. `ps -p` displays the details about the given process id.
 
 ```text
