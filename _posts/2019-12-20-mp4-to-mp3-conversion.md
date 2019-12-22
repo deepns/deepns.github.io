@@ -1,5 +1,5 @@
 ---
-title: Video(mp4) to audio (mp3) conversion tool
+title: Video to audio batch conversion
 categories:
     - Tech
 Tags:
@@ -9,7 +9,7 @@ Tags:
 
 I had a bunch of video files of a lecture that I wanted to listen offline while doing errands or driving. They do play well in phones but I could not use them as is because of few reasons: 1) they take considerable storage space 2) does not play well in the background, so can't listen during  3) distracting while driving and so on. There are indeed some apps available in the App Store to extract the audio stream out of the mp4 videos. But I did want to download a third party app just for a rare use. Also those apps are usually heavy weight and comes with boat load of stuff that I probably will never use. So I looked out for a command line tool or a library that I can simply use inside a Python program. That way I can script the process and can have more control over how files are handled and named. I chose to give a try with [moviepy](https://pypi.org/project/moviepy/) library mainly because of its super simple interfaces.
 
-I installed the moviepy packages inside a virtual environment since I didn't have any plans to use this package outside of this use case. Installing third party packages in a virtual environment makes it much easier and cleaner to handle the dependencies than installing in the user environment.
+I installed the moviepy packages inside a virtual environment since I didn't have any plans to use this package outside of this use case. Installing third party packages in a virtual environment makes it much easier and cleaner to handle the dependencies than installing in the user environment. (note: virtual environment can be activated in [many](https://docs.python-guide.org/dev/virtualenvs/) ways. The [built in](https://docs.python.org/3/tutorial/venv.html) virtual environment supports comes with Python 3 suffices most use cases.)
 
 ```text
 $ python3 -m venv .venv
@@ -49,7 +49,7 @@ tqdm           4.41.0
 urllib3        1.25.7
 ```
 
-Here is a sample code that extracts the audio from a mp4 file and saves it into mp3, using the moviepy library. You can find the app code here. **add the python app into its own folder with requirements.txt and link it here**
+Here is a sample code that extracts the audio from a mp4 file and saves it into mp3, using the moviepy library. You can find the app code [here](https://github.com/deepns/video_to_mp3).
 
 ```python
 import moviepy.editor as mp
@@ -58,7 +58,7 @@ import os.path as path
 def extract_audio(source: str):
     """
     Extracts the audio from the given source video file
-    and saves into a mp3 file, with same name
+    and saves into a mp3 file, with same base name
     """
     video = mp.VideoFileClip(source)
     target = path.splitext(source)[0] + ".mp3"
@@ -79,7 +79,7 @@ MoviePy - Done.
     8 01@.mp3.log
 ```
 
-It worked great, although slightly slower than I expected. I checked out the [docs](http://zulko.github.io/moviepy/getting_started/quick_presentation.html) where it was given that it may not be optimal to use this if the sole requirement is simple conversions. This library also uses ffmpeg in the backend, so it is better to use that directly instead of through this library. I downloaded the [ffmpeg binary](https://evermeet.cx/ffmpeg/ffmpeg-96102-g26f4ee37f7.zip) and gave that a try. It was significantly faster than the moviepy library. The only downside is that I have to download a different binary if I switch the operating system, but I don't have such plans for now. So I ended up using just the ffmpeg binary.
+It worked great, although slightly slower than I expected. I checked out the [docs](http://zulko.github.io/moviepy/getting_started/quick_presentation.html) where it was given that it may not be optimal to use this if the sole requirement is simple conversions. This library also uses [ffmpeg](https://www.ffmpeg.org/about.html) in the backend, so it is better to use that directly instead of through this library. I downloaded the [ffmpeg binary](https://evermeet.cx/ffmpeg/ffmpeg-96102-g26f4ee37f7.zip) and gave that a try. It was significantly faster than the moviepy library. The only downside is that I will have to download a different binary if I switch the operating system, but I don't have such plans for now. So I ended up using just the ffmpeg binary and created multiple instances of ffmpeg in the background to extract audio from a collection of videos.
 
 ```text
 $ time ./ffmpeg2 -vn -i lectures/01@.mp4 lectures/01@.mp3
