@@ -1,5 +1,6 @@
 ---
 title: Some notes on filesystems - part 2
+toc: true
 categories:
     - Tech
 tags:
@@ -7,7 +8,7 @@ tags:
     - linux
 ---
 
-This is in continuation of mu [previous post on filesystems](https://deepns.github.io/tech/some-notes-on-filesystems/). The last post briefly covered the following filesystems.
+This is in continuation of my [previous post on filesystems](https://deepns.github.io/tech/some-notes-on-filesystems/). The last post briefly covered the following filesystems.
 
 - autofs - file systems mounted on demand and unmounted automatically after the expiry window
 - cgroupfs - a virtual filesystem to manage operations in Linux cgroups
@@ -15,7 +16,8 @@ This is in continuation of mu [previous post on filesystems](https://deepns.gith
 - devtmpfs - a filesystem interface to access the system devices
 - ramfs - a non-persistent filesystem backed by the physical memory
 - tmpfs - similar to ramfs, but with better and finer controls over resource usage
-- rootfs
+
+This post will cover some basics of **overlayfs**, **squashfs** and **mqueuefs** filesystems.
 
 ## overlayfs
 
@@ -328,9 +330,9 @@ rm /dev/mqueue/new-queue
 rm: remove regular file '/dev/mqueue/new-queue'? y
 ```
 
-## Summary
-
 ## References
+
+Some reference articles that were of great help to me in understanding the filesystems discussed above. Many thanks to the contributors.
 
 - [Julia Evans Blog](https://jvns.ca/blog/2019/11/18/how-containers-work--overlayfs/)
 - [Overlay driver in Docker](https://docs.docker.com/storage/storagedriver/overlayfs-driver/)
