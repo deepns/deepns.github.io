@@ -3,6 +3,7 @@ title: More fun with Python
 toc: true
 categories:
     - Tech
+    - Books
 tags:
     - programming
     - python

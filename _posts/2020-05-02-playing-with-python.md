@@ -3,6 +3,7 @@ title: Playing with Python
 toc: true
 categories:
     - Tech
+    - Books
 tags:
     - programming
     - python
