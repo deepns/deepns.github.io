@@ -1,5 +1,6 @@
 ---
 title: Some notes on filesystems
+classes: wide
 toc: true
 category:
     - Tech
