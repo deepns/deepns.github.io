@@ -51,7 +51,7 @@ mq_open (3posix)     - open a message queue (REALTIME)
 On Debian10, I couldn't find manpages-posix in the packages list. The man pages I was looking for showed up in `manpages-dev` though.
 
 ```text
-~ $ cat /etc/debian_version 
+~ $ cat /etc/debian_version
 10.4
 ~ $ man mq_open
 No manual entry for mq_open
@@ -82,7 +82,7 @@ The following NEW packages will be installed:
 Need to get 2232 kB of archives.
 After this operation, 3934 kB of additional disk space will be used.
 Get:1 http://deb.debian.org/debian buster/main amd64 manpages-dev all 4.16-2 [2232 kB]
-Fetched 2232 kB in 0s (12.9 MB/s) 
+Fetched 2232 kB in 0s (12.9 MB/s)
 Selecting previously unselected package manpages-dev.
 (Reading database ... 35900 files and directories currently installed.)
 Preparing to unpack .../manpages-dev_4.16-2_all.deb ...
