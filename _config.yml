@@ -114,4 +114,6 @@ analytics:
     tracking_id: "UA-151868570-1"
     anonymize_ip: false # default
 
+google_site_verification: p0uDmaK0Rkjyp_KDtqhzK8aO1Va3mXErxanYlp1oOA0
+
 repository: deepns/deepns.github.io
