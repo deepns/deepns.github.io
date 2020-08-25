@@ -1,5 +1,6 @@
 ---
 title: Playing with shared memory in Linux and macOS
+toc: true
 categories:
     - Tech
 tags:
