@@ -5,6 +5,7 @@ categories:
 tags:
     - linux
     - python
+    - programming
 ---
 
 I was writing a small script to automate some of my workflow of invoking several small scripts. I wanted to check the permissions of the internal scripts to avoid any unexpected errors in the overall execution. I can certainly get the file permissions with commands like `ls` and `stat` from the shell. I wanted to do the same but through Python this time. The python interfaces to check the file permissions resemble very much like the native calls.
