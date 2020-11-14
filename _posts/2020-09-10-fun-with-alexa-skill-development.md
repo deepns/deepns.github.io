@@ -1,5 +1,6 @@
 ---
 title: Fun with Alexa Skill Development
+last_modified_at: 2020-11-14T16:20:02-05:00
 header:
     image: /assets/images/headers/alexa-echo-jan-antonin-kolar-qQRrhMIpxPw-unsplash.jpg
     caption: "Photo Credit: [Jan Antonin Kolar](https://unsplash.com/@jankolar) on [Unsplash](https://unsplash.com/photos/qQRrhMIpxPw)"
@@ -26,9 +27,15 @@ I worked on sample skills such as [City Guide](https://github.com/alexa/skill-sa
 2. 5 GB of Amazon S3 storage, 20,000 get requests, 2,000 put requests, and 15 GB egress transfer per month
 3. 50GB storage for the skill code and 10K git requests per month.
 
-That was way more than what my skill would need. So it was a no brainer to go with Alexa Hosted Skills instead of hosting my own AWS Lambda and S3 buckets. After couple of weekends, I got my skill to a pretty good working state and submitted for approval. My skill **[GoodBerry's Day](https://www.amazon.com/Deep-S-GoodBerrys-Day/dp/B08HQWRXK5/) i**s now officially available in the [Skill Store](https://www.amazon.com/Deep-S-GoodBerrys-Day/dp/B08HQWRXK5/) after passing the certification**.** 
+That was way more than what my skill would need. So it was a no brainer to go with Alexa Hosted Skills instead of hosting my own AWS Lambda and S3 buckets. After couple of weekends, I got my skill to a pretty good working state and submitted for approval. My skill **[GoodBerry's Day](https://www.amazon.com/Deep-S-GoodBerrys-Day/dp/B08HQWRXK5/)** is now officially available in the [Skill Store](https://www.amazon.com/Deep-S-GoodBerrys-Day/dp/B08HQWRXK5/) after passing the certification.
 
 It turned out to be a great learning exercise. I refreshed some of my AWS knowledge, learnt the ASK SDK, basics of Voice UI, [SSML](https://en.wikipedia.org/wiki/Speech_Synthesis_Markup_Language), Alexa Skill certification and many more. I am planning to follow it up with some new features (such as date lookups, reminders, e.g. `Alexa, ask Goodberry's Day to remind me when Pumpkin is available`) regular updates going forward.
+
+## Updated 11/1
+
+- Get availability data by asking your favorite flavor. e.g *When will I get pumpkin?, Is smores available today?*
+- Get flavor data for the entire week - e.g. *What's special this week?*
+- Click [here](https://alexa-skills.amazon.com/apis/custom/skills/amzn1.ask.skill.ed894507-8ba6-4f3a-97cd-e23a488c7ad0/launch) to try out the skill
 
 ## References
 
