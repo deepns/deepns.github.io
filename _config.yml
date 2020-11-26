@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A byte stream of my thoughts
+title: Deepan Seeralan
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   A space to share my thoughts and learnings in computer science, software development, programming and books.
@@ -58,11 +58,11 @@ plugins:
 #  bio    : "My awesome biography constrained to a sentence or two goes here."
 author:
   name   : "Deepan Seeralan"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo-1.jpg"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://deepns.github.io"
+      url: "https://deepanseeralan.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/deepanns"
