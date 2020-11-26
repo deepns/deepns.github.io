@@ -58,7 +58,7 @@ plugins:
 #  bio    : "My awesome biography constrained to a sentence or two goes here."
 author:
   name   : "Deepan Seeralan"
-  avatar : "/assets/images/bio-photo-1.jpg"
+  avatar : "/assets/images/bio-photo.jpg"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
