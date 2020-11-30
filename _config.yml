@@ -121,3 +121,9 @@ social:
   links:
     - "https://www.linkedin.com/in/deepan-seeralan/"
     - "https://twitter.com/deepanns"
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
