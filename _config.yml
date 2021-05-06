@@ -13,15 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: DS blog
+title: Deepan Seeralan
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A space to share my thoughts and learnings in computer science, software development, programming and books.
 twitter_username: deepanns 
 github_username: deepns
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: air
 search: true
 
 # Build settings
@@ -64,7 +62,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://deepns.github.io"
+      url: "https://deepanseeralan.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/deepanns"
@@ -93,6 +91,7 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -114,4 +113,17 @@ analytics:
     tracking_id: "UA-151868570-1"
     anonymize_ip: false # default
 
+google_site_verification: p0uDmaK0Rkjyp_KDtqhzK8aO1Va3mXErxanYlp1oOA0
+
 repository: deepns/deepns.github.io
+social:
+  name:  Deepan Seeralan
+  links:
+    - "https://www.linkedin.com/in/deepan-seeralan/"
+    - "https://twitter.com/deepanns"
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"

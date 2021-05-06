@@ -3,7 +3,8 @@ title: Converting ISO 8601 formatted date into datetime objects in Python
 categories:
     - Tech
 tags:
-    - Python
+    - python
+    - programming
     - Alexa Skills
 ---
 

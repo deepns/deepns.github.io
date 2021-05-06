@@ -5,6 +5,7 @@ categories:
 tags:
     - python
     - macOS
+    - utilities
 ---
 
 Recently I downloaded some reference materials that came in a bunch of PDF files. I wanted to stitch them into one file so I can read or print more comfortably. I knew I can do this with the Preview app by drag-and-dropping multiple PDF files in the order I wanted to combine. Since I had few dozen files, I wasn't interested in doing this manually. If Preview can do it, there must be some ways to do that from command line too. That way, I can automate this with a bash script to go over mulitple files. The solution turned out much simpler than I thought, thanks to this [post](https://apple.stackexchange.com/questions/230437/how-can-i-combine-multiple-pdfs-using-the-command-line).
