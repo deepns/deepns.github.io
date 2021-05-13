@@ -109,3 +109,5 @@ print(data_with_syntax_highlighting)
 Combined output of the above two examples
 
 ![syntax-highlighting](/assets/images/for-posts/pymentize.jpg)
+
+[here](https://gist.github.com/deepns/22d366709a96f9e6fceba8abc8bdb156) is the link to a gist with the above code.
