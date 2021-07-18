@@ -3,7 +3,7 @@ title: Insert date/time using snippets and keyboard shortcuts in VS Code
 categories:
     - Tech
 tags:
-    - VSCode
+    - vscode
     - markdown
 ---
 
