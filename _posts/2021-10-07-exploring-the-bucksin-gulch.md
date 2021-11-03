@@ -6,6 +6,9 @@ tags:
     - travel
     - united states
     - outdoors
+header:
+    image: /assets/images/headers/buckskin.jpg
+    teaser: /assets/images/teasers/buckskin.jpg
 gallery:
     - url: /assets/images/for-posts/travel/Buckskin-1.jpg
       image_path: /assets/images/for-posts/travel/Buckskin-1.jpg
