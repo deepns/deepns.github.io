@@ -4,6 +4,7 @@ category:
     - Tech
 tags:
     - programming
+    - macOS
 header:
   teaser: /assets/images/teasers/openssl-certificate-post.jpeg
 ---
