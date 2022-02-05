@@ -1,5 +1,6 @@
 ---
 title: Python requests vs golang http,json
+last_modified_at: 2022-02-04T23:20:02-05:00
 category:
     - Tech
 tags:
@@ -32,7 +33,9 @@ if err != nil {
 defer response.Body.Close()
 ```
 
-- Due to static typing in go, decoding json data requires us to provide a type matching the data being decoded. We can decode one or more specific fields from the JSON data. Defining a struct with fields matching the keys in the data returned by `https://api.github.com/repos/golang/go`
+-~~Due to static typing in go, decoding json data requires us to provide a type matching the data being decoded.~~ Update: My bad 😔 I spoke too soon. I was wrong. Go indeed allows to decode json data into a map.
+
+- We can decode one or more specific fields from the JSON data. Defining a struct with fields matching the keys in the data returned by `https://api.github.com/repos/golang/go`
 
 ```go
 type Repo struct {
