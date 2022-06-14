@@ -62,12 +62,11 @@ d21d68f1e256   nginx     "/docker-entrypoint.…"   21 minutes ago   Up 21 minut
 
 Taking one step further, tried to look at the nginx configuration options.
 
-- The default config file is at **/etc/nginx/nginx.conf** and custom config files are stored at **/etc/nginx/conf.d/**. 
+- The default config file is at **/etc/nginx/nginx.conf** and custom config files are stored at **/etc/nginx/conf.d/**.
 - **/etc/nginx/nginx.conf** can import the configuration from the files in  **/etc/nginx/conf.d/** using the include directive.
-- **/etc/nginx/conf.d/default.conf** has the bare minimum config needed to run the nginx container. 
+- **/etc/nginx/conf.d/default.conf** has the bare minimum config needed to run the nginx container.
     - **server** block specifies the port to listen to and the location to serve the files from. This is similar to virtual server in Apache configuration.
 - [config guide](http://nginx.org/en/docs/beginners_guide.html) and [config file structure](http://nginx.org/en/docs/beginners_guide.html#conf_structure) was very helpful here.
-
 
 ```text
 $ docker exec -it cloudrunblog bash
@@ -192,7 +191,7 @@ COPY . .
 ENV JEKYLL_ENV=production
 RUN bundle exec jekyll build
 
-# Now that _site is built in /work directory, take it from 
+# Now that _site is built in /work directory, take it from
 # jekyll-build stage and put it into /usr/share/nginx/html
 # of the nginx image
 FROM nginx
@@ -359,7 +358,7 @@ Successfully tagged cloudrunblog:v2
 And run the new image
 
 ```console
-$ docker images                                                                          
+$ docker images
 REPOSITORY     TAG       IMAGE ID       CREATED              SIZE
 cloudrunblog   v2        a51c28a10aa9   About a minute ago   143MB
 ruby           latest    5bfd2dfe01e7   2 weeks ago          892MB
@@ -377,7 +376,7 @@ The following pages were very helpful in learning the above steps
 - [Deploying My Blog to Google Cloud Run](https://daniel-azuma.com/blog/2019/07/01/deploying-my-blog-to-google-cloud-run)
 - [Cloud Run Tutorial](https://cloud.google.com/community/tutorials/deploy-react-nginx-cloud-run)
 
-The container image built in this step is almost ready to be run in Cloud Run, with one pending change. 
+The container image built in this step is almost ready to be run in Cloud Run, with one pending change.
 Default port exposed on the containers in Cloud Run is 8080. See [container runtime contract](https://cloud.google.com/run/docs/container-contract). So for now will go with nginx listening on 8080.
 
 ```conf
