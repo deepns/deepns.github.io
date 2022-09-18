@@ -226,8 +226,10 @@ To summarize, the following steps worked good on macOS Monterey to build the ove
 
 To build just the c-client,
 
-- cd zookeeper-client/zookeeper-client-c/
-- **ACLOCAL="aclocal -I /usr/local/share/aclocal" autoreconf -if**
-- **./configure --enable-debug** (enabled debug symbols just in case)
-- **make**
-- **make install** (to install the libraries (libzookeeper_st, libzookeeper_mt) and binaries (cli_st, cli_mt, load_gen) into /usr/local/)
+```bash
+cd zookeeper-client/zookeeper-client-c/
+ACLOCAL="aclocal -I /usr/local/share/aclocal" autoreconf -if
+./configure --enable-debug #enabled debug symbols just in case 
+make 
+make install #to install the libraries (libzookeeper_st, libzookeeper_mt) and binaries (cli_st, cli_mt, load_gen) into /usr/local/
+```
