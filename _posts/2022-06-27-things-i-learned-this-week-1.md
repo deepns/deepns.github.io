@@ -54,6 +54,7 @@ with open(key_file, "rb") as key_file_fp:
 - [Format](https://docs.docker.com/engine/reference/commandline/images/#format-the-output) **docker images** output to display only the image and tag information => {% raw %} `$(docker images --format '{{.Repository}}:{{.Tag}}')`.{% endraw %} Formatting is based on [Go templates](https://pkg.go.dev/text/template). This is often useful in scripting to use only the needed fields.
 
 {% raw %}
+
 ```bash
 $ docker images
 REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
