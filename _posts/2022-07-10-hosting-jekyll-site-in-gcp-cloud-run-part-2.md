@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Running a jekyll static site on GCP Cloud Run - Part 2"
-last_modified_at: 2022-10-13T23:20:02-05:00
+last_modified_at: 2022-10-25T23:20:02-05:00
 categories:
     - Tech
 tags:
@@ -563,4 +563,4 @@ $ gcloud run services describe cloudrunblog --format=json | jq '.spec.template.s
 "us.gcr.io/cloud-run-experiments-350118/jekyll-blog-in-cloud-run/cloudrunblog:4dec0d1e704d3c7900ee2353e618e5656a23516f"
 ```
 
-This turned out to be very fun exercise to play with and get a taste of different GCP components.
+This turned out to be very fun exercise to play with and get a taste of different GCP components. Its a nice added benefit that all of the above actions can be performed within Google Cloud Shell instance itself, voiding the need to fall back to local machine. Also, this resource usage of the Cloud Run and Artifact Registry in this use case came well under the free limits, so no additional cost incurred in running this deployment.
