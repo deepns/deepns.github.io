@@ -111,9 +111,9 @@ tag_archive:
   path: /tags/
 
 analytics:
-  provider: "google"
+  provider: "google-universal"
   google:
-    tracking_id: "G-SRVFXJ1B3B"
+    tracking_id: "UA-151868570-1"
     anonymize_ip: false # default
 
 google_site_verification: p0uDmaK0Rkjyp_KDtqhzK8aO1Va3mXErxanYlp1oOA0
