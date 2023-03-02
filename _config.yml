@@ -113,7 +113,7 @@ tag_archive:
 analytics:
   provider: "google-universal"
   google:
-    tracking_id: "UA-151868570-1"
+    tracking_id: "G-SRVFXJ1B3B"
     anonymize_ip: false # default
 
 google_site_verification: p0uDmaK0Rkjyp_KDtqhzK8aO1Va3mXErxanYlp1oOA0
