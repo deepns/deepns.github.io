@@ -111,7 +111,7 @@ tag_archive:
   path: /tags/
 
 analytics:
-  provider: "google-universal"
+  provider: "google-gtag"
   google:
     tracking_id: "G-SRVFXJ1B3B"
     anonymize_ip: false # default
