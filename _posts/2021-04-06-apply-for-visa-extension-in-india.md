@@ -20,8 +20,8 @@ Making a note of the process for my future reference and others who may be in th
 - Documents to upload in the first phase
   - Passport sized photo (in .jpg/.jpeg format only, at a resolution of 150x150)
   - Fill Form C from [here](https://indianfrro.gov.in/frro/FormC) and download it.
-  - Request letter signed by both the parents (A letter to the Office of FRRO of the respective jurisdiction)
-  - Undertaking letter signed by both the parents (similar to request letter, but with details of residence and duration of stay specified)
+  - Request letter signed by both the parents (A letter to the Office of FRRO of the respective jurisdiction) ([here](https://docs.google.com/document/d/e/2PACX-1vSs-zWFCYCyguActohaYR8xNc1dsetF4OpTGmFbkb1IBtaqmcG6kAk0kb4O09InSscnxqoSfZP9yllH/pub) is a sample letter. Update the address of FRRO as needed)
+  - Undertaking letter signed by both the parents (similar to request letter, but with details of residence and duration of stay specified) ([here](https://docs.google.com/document/d/e/2PACX-1vQ6CGhgOrNoI8hTtDUjBQP4aizjSu2N1Nz2EJNe-68KaoVLVlGnzjg4ifOiUoBmkWPT5GLMaz2Xxo6l/pub) is a sample undertaking letter. Update the FRRO address as needed)
   - Copy of passport and Indian visa
 
 After reviewing the application and the supporting documents, officials may ask for more documentation as needed. The following docs were requested in our case:
