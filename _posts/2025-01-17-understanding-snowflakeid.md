@@ -40,6 +40,7 @@ Below is a Python implementation of a Snowflake ID generator and its integration
 import os
 import time
 from pymongo import MongoClient
+from pymongo.errors import DuplicateKeyError
 
 class SnowflakeIDGenerator:
     """
@@ -92,7 +93,7 @@ collection = db["test_collection"]
 generator = SnowflakeIDGenerator()
 
 # Generate and insert IDs
-batch_size = int(os.getenv("BATCH_SIZE", "10000"))
+batch_size = int(os.getenv("BATCH_SIZE", "100000"))
 for i in range(batch_size):
     unique_id = generator.generate_id()
     document = {
@@ -100,7 +101,10 @@ for i in range(batch_size):
         "pod": os.getenv("HOSTNAME", "unknown"),
         "timestamp": time.time()
     }
-    collection.insert_one(document)
+    try:
+        collection.insert_one(document)
+    except DuplicateKeyError:
+        print(f"Document with _id {document['_id']} already exists.")
 
 print(f"Generated and inserted {batch_size} IDs.")
 ```
@@ -139,8 +143,6 @@ CMD ["python", "app.py"]
 ### Docker Compose
 
 ```yaml
-version: '3.9'
-
 services:
   mongo:
     image: mongo:latest
@@ -201,9 +203,3 @@ volumes:
 
    - The MongoDB container will be accessible at `localhost:27017`.
    - The application will generate and insert unique Snowflake IDs into MongoDB.
-
----
-
-## Conclusion
-
-Snowflake ID is an elegant solution for generating unique identifiers in distributed systems. Its combination of timestamp, machine ID, and sequence ensures scalability, efficiency, and uniqueness. This application demonstrates how to generate and store these IDs in MongoDB, and by using Docker, deploying and running the system becomes seamless and consistent across environments.
