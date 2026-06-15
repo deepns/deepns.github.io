@@ -16,7 +16,7 @@
 title: Deepan Seeralan
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  A space to share my thoughts and learnings in computer science, software development, programming and books.
+  Writing about AI pipelines, RAG, vector databases, and applied LLM engineering. Learning in public, with code.
 twitter_username: deepanns 
 github_username: deepns
 minimal_mistakes_skin: air
@@ -72,6 +72,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/deepanns"
+    - label: "RSS Feed"
+      icon: "fas fa-fw fa-rss-square"
+      url: "/feed.xml"
 
 footer:
   links:
