@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 3.9"
+gem "kramdown-parser-gfm"
 
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
@@ -16,6 +17,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "jekyll-remote-theme"
 end
 
 # this is due to https://github.com/jekyll/jekyll/issues/9110

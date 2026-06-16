@@ -21,9 +21,13 @@ twitter_username: deepanns
 github_username: deepns
 minimal_mistakes_skin: air
 search: true
+url: "https://deepanseeralan.com"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -54,6 +58,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 #  bio    : "My awesome biography constrained to a sentence or two goes here."
 author:
