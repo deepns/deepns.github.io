@@ -3,19 +3,17 @@ permalink: /about/
 title: "About"
 ---
 
-I'm Deepan Seeralan, a software engineer based in Raleigh, North Carolina. I work on backend systems, and over the past couple of years my focus has shifted heavily toward AI infrastructure — building RAG pipelines, working with vector databases, and figuring out how to get LLM-powered applications from prototype to production without the wheels falling off.
+I'm Deepan Seeralan, a software engineer based in Greater Seattle Area. I work on backend systems specializing in storage. Over the past couple of years my focus has shifted more towards AI infrastructure — building RAG pipelines, working with vector databases, and figuring out how to get LLM-powered applications from prototype to production without the wheels falling off.
 
-This blog started as a general space for things I was learning. It's evolved into a more focused series on applied AI and LLM engineering — the practical, code-heavy kind. Less theory, more "here's what actually happened when I tried this."
+This blog started as a general space for things I was learning. It's now pivoting to a focused series on applied AI and AI infrastructure — the practical, code-heavy kind. Less theory, more "here's what actually happened when I tried this."
 
-## What I Write About
+## What I'm Writing About
 
-- **RAG pipelines** — chunking strategies, retrieval, reranking, evaluation
-- **Vector databases** — Qdrant, pgvector, Pinecone, and how to choose
-- **LLM serving and deployment** — FastAPI, BentoML, self-hosting vs API
-- **LLMOps** — observability, evaluation pipelines, cost control
-- **Agentic systems** — LangGraph, tool use, multi-step reasoning
+So far that's meant posts on RAG pipeline design, vector database tradeoffs (Pinecone, serverless), and taking a document Q&A service from prototype to production with FastAPI. I'm also tracking how emerging standards like Google's Open Knowledge Format are shaping how agents read and reason over content.
 
-I try to write the post I wish I had found when I was learning something. Code-first, with honest notes on what didn't work.
+## Where This Is Headed
+
+The throughline going forward is applied AI and AI infrastructure: LLM serving and deployment, evaluation and observability (LLMOps), and agentic systems — tool use, multi-step reasoning, and the infrastructure to run them reliably. Expect more code-first deep dives and honest notes on what didn't work, as I build more of this out.
 
 ## Previously
 
