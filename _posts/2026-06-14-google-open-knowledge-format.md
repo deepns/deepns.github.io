@@ -10,7 +10,7 @@ tags:
     - markdown
 toc: true
 header:
-  teaser: /assets/images/teasers/nubelson-fernandes-CO6r5hbt1jg-unsplash.jpg
+  teaser: /assets/images/teasers/mario-verduzco-network-sphere-unsplash.jpg
 ---
 
 Two days ago, Google Cloud published a spec called the Open Knowledge Format (OKF). It's a v0.1 release — early, explicit about that — but the idea behind it is worth understanding now because it points at a real problem that anyone building with LLMs runs into eventually.
