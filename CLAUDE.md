@@ -62,3 +62,17 @@ Post-specific images live under `assets/images/for-posts/<post-slug>/`. Header a
 All significant site settings (author info, analytics, comments, pagination, plugins) are in `_config.yml`. Comments use Utterances (GitHub issues). Search uses Algolia (`jekyll-algolia` gem). Analytics is GA4.
 
 The `_data/navigation.yml` file controls the top navigation menu.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues on `deepns/deepns.github.io`, managed via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: one `GLOSSARY.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
