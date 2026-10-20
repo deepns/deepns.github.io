@@ -1,6 +1,6 @@
 main:
-  - title: "AI & ML"
-    url: /categories/tech/
+  - title: "Applied AI"
+    url: /ai/
   - title: "All Posts"
     url: /posts/
   - title: "Tags"
