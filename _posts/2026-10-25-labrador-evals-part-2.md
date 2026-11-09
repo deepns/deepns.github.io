@@ -267,3 +267,5 @@ Running a real evaluation shakes out more than ranking bugs:
 4. **Put a confidence interval on it.** With 114 queries, half the differences I'd have reported as wins were noise.
 
 The benchmark, the harness and the full report are in the repo: [github.com/deepns/labrador](https://github.com/deepns/labrador). If you build a retriever for your own files, I'd recommend building the fake folder before tuning anything. It took an afternoon and found the biggest bug in the project.
+
+**Next:** [Part 3]({{ site.url }}/tech/labrador-ask-design-part-3/) moves from search to answers, with the design for a local LLM `ask` step that cites its sources, checks IDs in code and keeps everything on the machine.
